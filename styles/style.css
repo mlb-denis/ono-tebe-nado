@@ -2,15 +2,23 @@
 main {
   display: flex;
   flex-direction: column;
-  gap: 180px;
+  gap: 170px;
+}
+
+.section-content{
+  width: 100%;
+  margin: 0 auto;
 }
 
 /* Хедер НАЧАЛО */
 .header {
-  padding: 92px 49px 92px 51px;
+  padding: 92px 51px 89px;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 1.5fr;
+  /* Заменил на гриды
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between; */ 
   align-items: center;
 }
 
@@ -52,9 +60,11 @@ main {
 }
 
 .header__logo {
+  
   display: block;
   justify-self: center;
   align-self: center;
+  
 }
 
 .header__logo-image {
@@ -70,11 +80,13 @@ main {
   line-height: 24.3px;
   font-style: normal;
   text-underline-position: under;
+  width: 240px;
+  justify-self: end;
 }
 
 .header__address-link {
   width: 240px;
-  height: 24px;
+  /* height: 24px; Убрал высоту  */
   justify-content: space-evenly;
 }
 
@@ -86,8 +98,7 @@ main {
   background-image: url(../images/cover.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
-  margin: 0 auto;
+  background-position: center; /*Добавил центрирование  */
   padding: 165px 50px 50px 50px;
 }
 
@@ -138,6 +149,7 @@ main {
 }
 
 .bet-button {
+  font-family: "Raleway", sans-serif;
   cursor: pointer;
   font-size: 22px;
   font-weight: 400;
@@ -176,8 +188,6 @@ main {
 
 /* Карточки НАЧАЛО*/
 .lots {
-  /* width: 100%;
-  margin: 0 auto; */
   padding: 0 50px;
 }
 
@@ -210,6 +220,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-position: center;
   gap: 30px;
   width: 100%;
   height: 100%;
@@ -256,7 +267,7 @@ main {
 }
 
 .lots__look-more-link {
-  display: inline-block;
+  display: block;
   color: #000;
   margin: 30px 0 0 40px;
   font-size: 20px;
@@ -271,7 +282,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 2fr;
   column-gap: 24px;
-  padding: 0 50px;
+  padding: 0 30px;
 }
 
 .about__column {
@@ -283,14 +294,13 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px;
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
 }
 
 .about__logo-image {
   width: 148px;
-  height: 114px;
 }
 
 .about__title {
@@ -317,11 +327,9 @@ main {
 }
 
 .footer {
-  width: 100%;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  padding: 180px 50px 90px;
+  padding: 180px 50px 80px;
 }
 
 .footer__menu-list {
@@ -342,12 +350,12 @@ list-style: none;
 .footer__social-list {
   display: flex;
   justify-content: space-between;
+  gap: 48px;
 }
 .footer__social-list-item {
   display: flex;
-  /* gap: 48px; */
   list-style: none;
-  padding-right: 48px;
+  /* padding-right: 48px; */
 }
 
 .footer__social-icon {
