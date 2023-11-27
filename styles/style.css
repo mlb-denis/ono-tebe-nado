@@ -5,7 +5,7 @@ main {
   gap: 170px;
 }
 
-.section-content{
+.section-content {
   width: 100%;
   margin: 0 auto;
 }
@@ -15,11 +15,11 @@ main {
   padding: 92px 51px 89px;
   display: grid;
   grid-template-columns: 1.5fr 2fr 1.5fr;
+  align-items: center;
   /* Заменил на гриды
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; */ 
-  align-items: center;
+  justify-content: space-between; */
 }
 
 .header__link {
@@ -60,11 +60,9 @@ main {
 }
 
 .header__logo {
-  
   display: block;
   justify-self: center;
   align-self: center;
-  
 }
 
 .header__logo-image {
@@ -89,7 +87,6 @@ main {
   /* height: 24px; Убрал высоту  */
   justify-content: space-evenly;
 }
-
 /* Хедер КОНЕЦ */
 
 /* Оверлей НАЧАЛО */
@@ -333,8 +330,8 @@ main {
 }
 
 .footer__menu-list {
-text-align: center;
-list-style: none;
+  text-align: center;
+  list-style: none;
 }
 
 .footer__menu-link {
@@ -359,7 +356,6 @@ list-style: none;
 }
 
 .footer__social-icon {
-width: 100%;
-height: 48px;
+  width: 100%;
+  height: 48px;
 }
-
